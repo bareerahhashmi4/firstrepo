@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us -Gym Management System</title>
+    <!-- <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="about.css"> -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='contact.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='member.css')}}">
+    >
+
+</head>
+<body class="about-background">
+    
+     <nav>
+        <h1><span>Gym</span> Managment <span>System</span></h1>
+        <ul>
+          <li><a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a></li>
+          <li><a class="nav-link active" aria-current="page" href="{{url_for('about')}}">About</a></li>
+          <li><a class="nav-link active" aria-current="page" href="{{url_for('member')}}">Membership</a></li>
+          <li><a class="nav-link active" aria-current="page" href="{{url_for('contact')}}">Contact</a></li>
+        </ul> 
+    </nav>
+    <div class="text">
+        <center><h1>Contact Us</h1>
+         <p>Come with us and learn how to take care of your body.<br>Now its time to get stronger!</p></center> 
+ </div>
+ <div class="box">
+    <form action="action_page.php">
+  
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Pakistan">Pakistan</option>
+          <option value="Saudia Arabia">Saudia Arabia</option>
+          <option value="Turkey">Turkey</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+</div>
+<footer class="footer">
+    <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>

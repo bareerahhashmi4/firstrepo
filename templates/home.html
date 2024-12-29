@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym Management</title>
+     <link rel="stylesheet" href="{{url_for('static',filename='style2.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='contact.css')}}">
+     <link rel="stylesheet" href="{{url_for('static',filename='member.css')}}">
+    
+</head>
+<body class="home-background">
+    
+    <nav>
+        <h1><span>Gym</span> Managment <span>System</span></h1>
+        <ul>
+             <li><a class="nav-link active" aria-current="page" href="{{url_for('home')}}">Home</a></li>
+             <li><a class="nav-link active" aria-current="page" href="{{url_for('about')}}">About</a></li>
+             <li><a class="nav-link active" aria-current="page" href="{{url_for('member')}}">Membership</a></li>
+             <li><a class="nav-link active" aria-current="page" href="{{url_for('contact')}}">Contact</a></li>
+        </ul> 
+    </nav>
+
+    <div class="container">
+        <div class="text">
+               <center><h1>Home</h1>
+                <p>Come with us and learn how to take care of your body.<br>Now its time to get stronger!</p></center> 
+        </div>
+    </div>
+    <div class="box">
+        <div class="main">
+            <div class="main1">
+             <h1 style="font-size: 40px;">   Welcome to GYM Management System</h1><br><br>
+             <p>At our gym management website we believe in empowering individuals to achieve their best selves through fitness. Whether you're just starting your fitness journey or you're an experienced athlete, we provide a welcoming environment, expert trainers, and top-notch equipment to help you reach your goals.Whether you're aiming for weight loss, building muscle, or simply improving your overall health, we're here to help you every step of the way.
+
+                Sign up for a free trial or book a tour today to see how we can help you achieve your fitness goals!</p>
+            </div>
+            <div class="main2"></div>
+        </div> 
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+      </footer>
+    
+</body>
+</html>
